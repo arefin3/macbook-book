@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MacBook-PRO</title>
+    <!-- tailwind linking  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- header here  -->
+    <header></header>
+    <!-- header ends  -->
+    <!-- main here  -->
+    <main>
+        <section>
+            <!-- column container  -->
+            <div class="grid-container">
+                <!-- display divided into two column here  -->
+                <div class="grid lg:grid-cols-2 w-4/5 mx-auto mt-12">
+                    <div class="column">
+                        <!-- left column  -->
+                        <img class="w-4/5" src="images/mac.png" alt="" />
+                    </div>
+                    <div class="column">
+                        <!-- right column  -->
+                        <div class="product-details mb-16">
+                            <!-- product-details  -->
+                            <h1 class="text-5xl font-normal">
+                                Customize your Blue 24-Inch iMac with Apple M1 chip
+                            </h1>
+                            <h6 class="mt-2 font-normal">
+                                Apple's thinnest, lightest notebook, completely transformed by
+                                the Apple M1 chip. CPU speeds up to 3.5x faster. GPU speeds up
+                                to 5x faster. Our most advanced Neural Engine for up to 9x
+                                faster machine learning. The longest battery life ever in a
+                                MacBook Air. And a silent.
+                            </h6>
+                        </div>
+                        <!-- specification part  -->
+                        <div class="spec-Builder">
+                            <!-- memory specification  -->
+                            <div class="memory mb-16">
+                                <h6 class="text-xl text-gray-800 font-bold mb-2">Memory</h6>
+                                <button id="memory-8" class="btn px-3 py-1 text-gray-700
+                      border-2 border-gray-700 rounded ">
+                                    8GB unified memory
+                                </button>
+                                <button id="memory-16" class="btn px-3 py-1 text-gray-700 border-2 border-gray-700
+                      rounded ">
+                                    16GB unified memory
+                                </button>
+                            </div>
+                            <!-- storage specification  -->
+                            <div class="Storage mb-16">
+                                <h6 class="text-xl font-bold text-gray-800 mb-2">Storage</h6>
+                                <button id="storage-256" class="btn px-3 py-1 text-gray-700
+                      border-2 border-gray-700 rounded">
+                                    256GB SSD storage
+                                </button>
+                                <button id="storage-512" class="btn px-3 py-1 text-gray-700
+                      border-2 border-gray-700 rounded">
+                                    512GB SSD storage
+                                </button>
+                                <button id="storage-1TB" class="btn px-3 py-1 text-gray-700 border-2 border-gray-700
+                      rounded">
+                                    1TB SSD storage
+                                </button>
+                            </div>
+                            <!-- delivery section -->
+                            <div class="delivery mb-16">
+                                <h6 class="text-xl font-bold mb-2 text-gray-800">
+                                    Choose your delivery option
+                                </h6>
+                                <button id="delivery-free" class="btn px-3 py-1
+                      text-gray-700 border-2 border-gray-700 rounded">
+                                    Friday, Aug 25 FREE Prime Delivary
+                                </button>
+                                <button id="delivary-paid" class="btn px-3 py-1
+                      text-gray-700 border-2 border-gray-700 rounded">
+                                    Friday, Aug 21 Delivary charge $20
+                                </button>
+                            </div>
+                        </div>
+                        <!-- cash calculation section -->
+                        <div class="cash-recipt mb-16">
+                            <div class="grid grid-cols-2 w-3/4">
+                                <div class="recipt-col">
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        Best Price
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        Extra Memory Cost
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        Extra Storage Cost
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        Delivery Charge
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-800" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        Total Price
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                </div>
+                                <div class="recipt-col-amount">
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        $<span id="base-price-show">1299</span>
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        $<span id="memory-price-show">0</span>
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        $<span id="storage-price-show">0</span>
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        $<span id="delivery-price-show">0</span>
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-800" />
+                                    <h6 class="text-base m-1 font-medium text-gray-800">
+                                        $<span id="total-price-show">1299</span>
+                                    </h6>
+                                    <hr class="border-b-1 border-gray-400" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- promo-code section -->
+                        <div class="promo mb-8">
+                            <h6 class="text-xl font-bold mb-2 text-gray-800">
+                                Add Promo code
+                            </h6>
+                            <input class="border-2 border-gray-600 rounded px-2"
+                                placeholder="add promo code for discount" type="text" name="promocode"
+                                id="promo-input" />
+                            <button id="apply-promo" class="btn px-3 bg-red-600 text-white border-2 border-red-600
+                            rounded">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- payable after promocode submission here -->
+            <hr class="border-b-2 border-gray-400" />
+            <h1 class="text-5xl text-center text-gray-800 font-normal">
+                Total: $<span id="bottom-total">1299</span>
+            </h1>
+        </section>
+    </main>
+    <!-- js file addition  -->
+    <script src="./js/macbook.js"></script>
+</body>
+
+</html>
